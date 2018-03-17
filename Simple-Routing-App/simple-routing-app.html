@@ -1,26 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="routingApp">
 <head>
 	<title>Simple Routing App</title>
 	<link rel="stylesheet" type="text/css" href="simple-routing-app.css">
-	<script src="angular-min.js"></script>
-	<script src="angular-route.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.min.js"></script>
+	<!--<script src="angular-min.js"></script>
+	<script src="angular-route.min.js"></script>-->
 	<script src="simple-routing-app.js"></script>
 </head>
-<body ng-app="routingApp">
+<body>
 	<div class="header">
 		<h1>School Template</h1>
 	</div>
 	<div class="nav">
 		<ul>
-			<li><a href="home.html">Home</a></li>
-			<li><a href="studentList.html">Student List</a></li>
-			<li><a href="classes.html">Student details</a></li>
-			<li><a href="About-us.html">About us</a></li>
-			<li><a href="contact.html">Contact</a></li>
+			<li><a href="#/home">Home</a></li>
+			<li><a href="#/classes">Student List</a></li>
+			<li><a href="#/studentList">Student details</a></li>
+			<li><a href="#/about-us">About us</a></li>
+			<li><a href="#/contact">Contact</a></li>
 		</ul>
 	</div>
-	<div class="view"><ng-view></ng-view></div>
+	<div class="view">
+		<ng-view></ng-view>
+	</div>
 	<div class="footer">
 		copyrights by @w3schools
 	</div>
